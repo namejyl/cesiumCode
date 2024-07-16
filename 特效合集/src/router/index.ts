@@ -1,4 +1,4 @@
-import { createRouter, createWebHistory } from 'vue-router';
+import { createRouter, createWebHistory, createWebHashHistory } from 'vue-router';
 import Menu from '../layout/Menu.vue';
 // 公共路由
 export const constantRoutes = [
@@ -10,7 +10,7 @@ export const constantRoutes = [
 ];
 
 const router = createRouter({
-  history: createWebHistory(),
+  history: createWebHashHistory(),
   routes: constantRoutes
 });
 router.beforeEach(async (to, form, next) => {
