@@ -4,7 +4,7 @@
       <div id="slider"></div>
     </div>
     <div id="eye"></div>
-    <PlottingTool v-if="PlottingToolShow"></PlottingTool>
+    <!-- <PlottingTool v-if="PlottingToolShow"></PlottingTool> -->
   </div>
 </template>
 
@@ -15,7 +15,7 @@ const Cesium = window.Cesium;
 const PlottingToolShow = ref(false);
 let viewer: any;
 onMounted(async () => {
-  // let key = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJqdGkiOiJiYjUwNWQyOC0yZmZhLTRmMzItOTQyZC02ZmQyMWIyMTA3NmEiLCJpZCI6NjcyNzcsImlhdCI6MTY2ODE1ODc2Mn0.t1h6-ZADkGnZUZZoLtrlgtTp8_MR2Kxfhew42ksDgmk';
+  // let key = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJqdGkiOiI3ZjQ5ZGUzNC1jNWYwLTQ1ZTMtYmNjYS05YTY4ZTVmN2I2MDkiLCJpZCI6MTE3MTM4LCJpYXQiOjE2NzY0NDUyODB9.ZaNSBIfc1sGLhQd_xqhiSsc0yr8oS0wt1hAo9gbke6M';
   // Cesium.Ion.defaultAccessToken = key;
   viewer =
     window.viewer =
@@ -30,13 +30,13 @@ onMounted(async () => {
           }
         },
         // terrainProvider: await Cesium.createWorldTerrainAsync(),
-        geocoder: true,
-        homeButton: true,
-        sceneModePicker: true,
-        baseLayerPicker: true,
-        navigationHelpButton: true,
-        animation: true,
-        timeline: true,
+        geocoder: false,
+        homeButton: false,
+        sceneModePicker: false,
+        baseLayerPicker: false,
+        navigationHelpButton: false,
+        animation: false,
+        timeline: false,
         fullscreenButton: false,
         vrButton: false,
         //关闭点选出现的提示框

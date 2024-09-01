@@ -67,11 +67,55 @@ import BarEcharts from './BarEcharts.ts';
 import ProfileAnalysis from './ProfileAnalysis.ts';
 import Excavation from './Excavation.ts';
 import GeneratingTriangulation from './GeneratingTriangulation.ts';
-import ThermalMap from './ThermalMap.ts'
-import ThermalMap_3D from './ThermalMap_3D.ts'
+import ThermalMap from './ThermalMap.ts';
+import ThermalMap_3D from './ThermalMap_3D.ts';
+import AddShp from './AddShp.ts';
+import entity from './entity.ts';
+import adddztp from './adddztp.ts';
+import addglb from './addglb.ts';
+import customShaderzdycz from './customShaderzdycz.ts';
+import dqtmd from './dqtmd.ts';
+import dian from './dian.ts';
+import xian from './xian.ts';
+import mian from './mian.ts';
+import tubiao from './tubiao.ts';
+import tubiaoAll from './tubiaoAll.ts';
+import popup from './popup.ts';
+import huoyan from './huoyan.ts';
+import shuiqiang from './shuiqiang.ts';
+import baozha from './baozha.ts';
+import penwu from './penwu.ts';
+import yan from './yan.ts';
+import tijiyun from './tijiyun.ts';
+import shandian from './shandian.ts';
+import svg from './svg.ts';
+import gif from './gif.ts';
+import entityAll from './entityAll.ts';
 const CesiumMap: any = {
+  svg,
+  gif,
+  entityAll,
+  baozha,
+  penwu,
+  yan,
+  tijiyun,
+  shandian,
+  shuiqiang,
+  huoyan,
+  dian,
+  xian,
+  mian,
+  tubiao,
+  tubiaoAll,
+  popup,
+  addglb,
+  dqtmd,
+  customShaderzdycz,
+  adddztp,
+  entity,
   AddTiandituWmts,
   AddXyz,
+  AddShp,
   Add3DTileset,
   AddGeoJson,
   AddJson,
