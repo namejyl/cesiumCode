@@ -30,7 +30,7 @@
 import { reactive, ref } from 'vue';
 // import { Menu as Setting } from '@element-plus/icons-vue';
 import Map from './Map.vue';
-import CesiumMap from '../code/index.ts';
+import CesiumMap from '../../public/code/index.ts';
 import 'codemirror/mode/javascript/javascript.js';
 import Codemirror from 'codemirror-editor-vue3';
 import axios from 'axios';
@@ -594,7 +594,7 @@ const SettingCesiumFn = async (code: any) => {
 const ShowCode = ref(false);
 const code = ref(``);
 const ShowCodeFn = async () => {
-  axios.get('/src/code/' + indexCode.value + '.ts').then(res => {
+  axios.get('/code/' + indexCode.value + '.ts').then(res => {
     code.value = res.data.split('//# ')[0];
     ShowCode.value = !ShowCode.value;
   });
@@ -768,6 +768,7 @@ const cmOptions: EditorConfiguration = {
   height: 100% !important;
   right: 0;
   position: fixed;
+  z-index: 99999;
 }
 .button-1 {
   right: 0px;
