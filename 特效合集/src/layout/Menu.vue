@@ -492,6 +492,46 @@ const listData = reactive<any>([
         value: '闪电',
         code: 'shandian',
         imageUrl: getImgUrl(83)
+      },
+      {
+        value: '核爆1',
+        code: 'MushroomCloudV1'
+        // imageUrl: getImgUrl()
+      },
+      {
+        value: '核爆2',
+        code: 'MushroomCloudV2'
+        // imageUrl: getImgUrl()
+      },
+      {
+        value: '核爆3',
+        code: 'MushroomCloudV3'
+        // imageUrl: getImgUrl()
+      },
+      {
+        value: '水面1',
+        code: 'Underwater1'
+        // imageUrl: getImgUrl()
+      },
+      {
+        value: '水面2',
+        code: 'Underwater2'
+        // imageUrl: getImgUrl()
+      },
+      {
+        value: '水面3',
+        code: 'Underwater3'
+        // imageUrl: getImgUrl()
+      },
+      {
+        value: '弹坑1',
+        code: 'crater1'
+        // imageUrl: getImgUrl()
+      },
+      {
+        value: '弹坑2',
+        code: 'crater2'
+        // imageUrl: getImgUrl()
       }
     ]
   },

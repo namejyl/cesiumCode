@@ -91,7 +91,23 @@ import shandian from './shandian.ts';
 import svg from './svg.ts';
 import gif from './gif.ts';
 import entityAll from './entityAll.ts';
+import MushroomCloudV1 from './MushroomCloudV1.ts';
+import MushroomCloudV2 from './MushroomCloudV2.ts';
+import MushroomCloudV3 from './MushroomCloudV3.ts';
+import Underwater1 from './Underwater1.ts';
+import Underwater2 from './Underwater2.ts';
+import Underwater3 from './Underwater3.ts';
+import crater1 from './crater1.ts';
+import crater2 from './crater2.ts';
 const CesiumMap: any = {
+  crater1,
+  crater2,
+  MushroomCloudV1,
+  MushroomCloudV2,
+  MushroomCloudV3,
+  Underwater1,
+  Underwater2,
+  Underwater3,
   svg,
   gif,
   entityAll,
